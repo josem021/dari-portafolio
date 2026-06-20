@@ -64,8 +64,12 @@ body {
     height: 100%;
     object-fit: cover; 
     filter: blur(25px) brightness(0.5); 
-    transform: scale(1.1);
+    transform: scale(1.1); 
     z-index: 1;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none; 
+    user-select: none;
+    pointer-events: none;
 }
 
 .slide-fg {
@@ -74,6 +78,10 @@ body {
     height: 100%;
     object-fit: contain; 
     z-index: 2; 
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    pointer-events: none; 
 }
 /* ----------------------------------------- */
 
@@ -196,6 +204,7 @@ h1 {
     letter-spacing: 2px;
     margin-bottom: 10px;
     margin-top: 65px;
+    --text-color: #EFE8EB;
     text-transform: uppercase;
 }
 
@@ -210,7 +219,7 @@ p {
 
 .btn-cv {
     display: inline-block;
-    background-color: white;
+    background-color: #EFE8EB;
     color: var(--bg-color);
     text-decoration: none;
     font-weight: 800;
@@ -274,9 +283,9 @@ p {
     }
 
     h1 {
-        font-size: 3.2rem; 
+        font-size: 3.2rem;
         margin-bottom: 20px;
-        margin-top: 0; 
+        margin-top: 0;
     }
     
     p {
