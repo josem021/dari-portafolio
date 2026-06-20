@@ -184,7 +184,7 @@ body {
 /* TAMAÑOS AUMENTADOS SOLO PARA MÓVIL */
 .profile-pic {
     position: absolute;
-    top: -65px; 
+    top: -90px; /* Centrado perfecto para la foto de 180px */
     left: 50%;
     transform: translateX(-50%);
     width: 180px; 
@@ -195,6 +195,12 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     z-index: 20;
     flex-shrink: 0;
+
+    /* BLOQUEO ANTI-DESCARGAS Y ANTI-ARRASTRE */
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 h1 {
@@ -204,7 +210,7 @@ h1 {
     letter-spacing: 2px;
     margin-bottom: 10px;
     margin-top: 65px;
-    --text-color: #EFE8EB;
+    color: #EFE8EB; /* Corregido para que aplique el color correctamente */
     text-transform: uppercase;
 }
 
